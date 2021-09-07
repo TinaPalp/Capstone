@@ -9,12 +9,13 @@ function getCountdown() {
     const today = new Date();
     const timeDiff = Math.round((inputDate.getTime() - today.getTime())  / (1000 * 60 * 60 * 24));
     const tripLength = Math.round((endDate.getTime() - inputDate.getTime())  / (1000 * 60 * 60 * 24)) + 1;
-    console.log("it is" + timeDiff + "days away")
+    console.log("it is " + timeDiff + " days away")
 
     if (timeDiff < 0) {
-        return [timeDiff, tripLength]
+        console.log(timeDiff)
+        return 'Trip is expired'
     } else {
-        return `Trip is expired`
+        return [timeDiff, tripLength]
     }
 }
 
