@@ -3,7 +3,7 @@ function getCountdown() {
     const enddate = document.getElementById('enddate').value;
     const parts =date.split('-');
     const endparts =enddate.split('-');
-    const inputDate = new Date(parts[0], parts[1] - 1, parts[2], '06'); 
+    const inputDate = new Date(parts[0], parts[1] - 1, parts[2], '23'); 
     const endDate = new Date(endparts[0], endparts[1] - 1, endparts[2], '06'); 
     console.log(inputDate)
     const today = new Date();
