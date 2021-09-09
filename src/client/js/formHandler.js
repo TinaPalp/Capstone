@@ -50,7 +50,7 @@ function updateUI(res) {
     }
     else {
 
-        cityResult.innerHTML = "Your trip to " +  res[1].city + "will start in " + countdown[0] + " days and has a duration of " + countdown[1] + " days"
+        cityResult.innerHTML = "Your trip to " +  res[1].city + " will start in " + countdown[0] + " days and has a duration of " + countdown[1] + " days"
         document.getElementById("myImg").src = res[2].img;
         document.getElementById("myImg").alt = "Picture of " + res[1].city;
         weatherResult.innerHTML = "Now it has " + res[0].temp + "° and it is " + res[0].weather
